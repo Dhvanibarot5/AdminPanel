@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Font -->
+    <link rel="stylesheet" href="asset/font/stylesheet.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <!-- media -->
+    <link rel="stylesheet" href="asset/css/responsive.css" />
+  </head>
+
+  <body>
+    <aside class="vh100">
+      <div class="aside2">
+        <div class="logo d-flex f-wrap align-center">
+          <img src="asset/images/logo.png" alt="" width="20px" />
+          <span>EDUMIX</span>
+          <small>1.2</small>
+        </div>
+        <div class="menu">
+          <ul>
+            <li class="aside_menu aside_menu_set active font_15">
+              <a href="javascript:void(0)"
+                ><i class="fa-solid fa-desktop"></i><span>DASHBOARD</span></a
+              >
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-regular fa-calendar"></i><span>LAYOUT</span
+                ><small class="small">NEW</small
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Slidebar Fixed</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">All Fixed</a>
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-regular fa-eye"></i><span>SKIN</span
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Blue Skin</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >White Skin</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Green Skin</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-regular fa-envelope"></i><span>MAIL</span
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Inbox <small class="small_inner bgcolor_r">256</small></a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Compose</a>
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-regular fa-file"></i><span>PAGE</span
+                ><small class="small bgcolor_blue border_n">HOT</small
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Bootstrap
+                    <small class="small_inner bgcolor_r">NEW</small></a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Blog List</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Blog Detail</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Gallery</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Calender</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Blank Page</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-solid fa-bars-staggered"></i><span>UI</span
+                ><small class="small">NEW</small
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Element</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Button</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Tab & Accordion</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Typography</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Panel</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Grids</a>
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)">Chart</a>
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-brands fa-wpforms"></i><span>FORM</span
+                ><small class="small">NEW</small
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Form Elements</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Advance Form</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Text Editor</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Flie Upload</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-solid fa-table-list"></i><span>TABLES</span
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+              <ul class="sub-ul">
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Table Static</a
+                  >
+                </li>
+                <li class="sub-li">
+                  <a class="nav-option1" href="javascript:void(0)"
+                    >Table Dynamic</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-solid fa-print"></i><span>ICONS</span></a
+              >
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav1" href="javascript:void(0)"
+                ><i class="fa-solid fa-flask"></i><span>EXTRA</span
+                ><i class="fa-solid fa-circle fa-circle1"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+          <div class="functions justify-between">
+            <ul>
+              <li class="aside_menu font_12 aside_menu_set">
+                <a href=""
+                  ><span>Settings</span
+                  ><i class="fa-solid fa-gear aside_menu_icon"></i
+                ></a>
+              </li>
+              <li class="aside_menu font_12 aside_menu_set">
+                <a href=""
+                  ><span>Help</span
+                  ><i class="fa-solid fa-phone-flip aside_menu_icon"></i
+                ></a>
+              </li>
+              <li class="aside_menu font_12 aside_menu_set">
+                <a href=""
+                  ><span>About Edumix</span
+                  ><i class="fa-solid fa-music aside_menu_icon"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside1">
+        <div class="logo1 d-flex f-wrap align-center">
+          <img src="asset/images/logo.png" alt="" width="20px" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li class="aside_menu active font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-solid fa-desktop"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-regular fa-calendar"></i>
+              </a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-regular fa-eye"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-regular fa-file"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-solid fa-bars-staggered"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-brands fa-wpforms"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-solid fa-table-list"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-solid fa-print"></i
+              ></a>
+            </li>
+            <li class="aside_menu font_15">
+              <a class="nav2" href="javascript:void(0)"
+                ><i class="fa-solid fa-flask"></i
+              ></a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <header>
+      <div class="btn d-flex justify-between align-center header_inner">
+        <div class="bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="btn1 d-flex f-wrap align-center">
+          <div class="pd_10">
+            <i class="fa-solid fa-envelope"></i>
+            <button class="green">84</button>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="pd_10">
+            <i class="fa-solid fa-bell"></i>
+            <button class="blue">45</button>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="align-center pd_10 search_bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="sear" placeholder="search" />
+          </div>
+        </div>
+        <div class="man d-flex f-wrap align-center pd_10">
+          <img src="asset/images/man.jpg" alt="" />
+          <span>Hi, Dave Mattew</span>
+          <i class="fa-solid fa-caret-down pd_10 dropdown_arrow">
+            <div class="dropdown">
+              <ul>
+                <li>
+                  <a href="javascript:void(0)" class="dropdown_list">
+                    <i class="fa-regular fa-user dropdown_icon"></i> Profile
+                    <i
+                      class="fa-solid fa-circle dropdown_circle"
+                      style="color: #4d6ea8"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="dropdown_list">
+                    <i class="fa-regular fa-folder-open dropdown_icon"></i>
+                    Account
+                    <i
+                      class="fa-solid fa-circle dropdown_circle"
+                      style="color: #345286"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="login.html" class="dropdown_list">
+                    <i
+                      class="fa-solid fa-arrow-up-from-bracket dropdown_icon"
+                    ></i>
+                    LogOut
+                    <i
+                      class="fa-solid fa-circle dropdown_circle"
+                      style="color: #162338"
+                    ></i>
+                  </a>
+                </li>
+                <li class="dropdown_more_li">
+                  <a class="dropdown_more" href="javascript:void(0)">More</a>
+                </li>
+              </ul>
+            </div>
+          </i>
+          <i class="fa-solid fa-list-ul pd_10"></i>
+        </div>
+        <i class="fa-solid fa-bars fa-bars-header"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="bgcolor_grey ml_40">
+        <i class="fa-solid fa-angle-right"></i>
+        <span>Dashboard</span>
+      </div>
+
+      <div class="grid main_outer d-flex f-wrap">
+        <div class="box active_S">
+          <span class="ml_20 color_grey font_12">ACTIVE STUDENTS</span>
+          <div id="chart"></div>
+        </div>
+        <div class="box box_counter">
+          <span class="color_grey font_12">STATS</span>
+          <div class="STATS1">
+            <div class="STATS1_L d-flex align-center justify-between">
+              <div id="number_up1"></div>
+              <span>+20%</span>
+            </div>
+            <div class="STATS1_R d-flex align-center justify-between">
+              <p>Total students</p>
+              <span>THIS YEAR</span>
+            </div>
+          </div>
+          <div class="STATS2">
+            <div class="STATS2_L d-flex align-center justify-between">
+              <div id="number_up2"></div>
+              <span>+5%</span>
+            </div>
+            <div class="STATS2_R d-flex align-center justify-between">
+              <p>Graduate</p>
+              <span>THIS WEEK</span>
+            </div>
+          </div>
+          <div class="STATS3">
+            <div class="STATS3_L d-flex align-center justify-between">
+              <div id="number_up3"></div>
+              <span>+125</span>
+            </div>
+            <div class="STATS3_R d-flex align-center justify-between">
+              <p>Total students</p>
+              <span>THIS MONTH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="h-100 pd_20">
+            <div
+              class="borderR_5 d-flex justify-between align-center w-12 bg_white h-100 pd_10"
+            >
+              <div class="percentage">
+                <span>55%</span>
+              </div>
+              <div class="p_dsc">
+                <p>Your Account isn't complete!</p>
+                <span>You must complete this issues.</span>
+                <div class="soc_icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-user-plus"></i>
+                  <i class="fa-solid fa-rotate"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="d-flex">
+            <div class="w-4 sm_box">
+              <div class="sm_box_inner bg_white">
+                <div class="d-flex justify-content-center align-center">
+                  <i class="fa-solid fa-wallet align-center"></i>
+                </div>
+                <p>YOUR BALANCE</p>
+              </div>
+            </div>
+            <div class="w-4 sm_box">
+              <div class="sm_box_inner bg_white">
+                <div class="d-flex justify-content-center align-center">
+                  <i class="fa-regular fa-newspaper"></i>
+                </div>
+                <p>GENERAL INFO</p>
+              </div>
+            </div>
+            <div class="w-4 sm_box">
+              <div class="sm_box_inner bg_white">
+                <div class="d-flex justify-content-center align-center">
+                  <i class="fa-solid fa-sliders"></i>
+                </div>
+                <p>MAIN SETTING</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box box_p box_bg borderR_5">
+          <div class="head d-flex align-center justify-between">
+            <div class="">
+              <i class="fa-solid fa-chart-pie"></i>
+              <span>Summary</span>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-minus"></i>
+              <i class="fa-solid fa-xmark float_r"></i>
+            </div>
+          </div>
+
+          <div class="box_summary">
+            <div class="d-flex align-center justify-content-center">
+              <div class="dsc d-flex text-center">
+                <div class="dsc_div1">
+                  <div id="number_up4" class="d-in-block"></div>
+                  <span>k</span>
+                  <p>Women</p>
+                </div>
+
+                <div class="dsc_div2">
+                  <div id="number_up5" class="d-in-block"></div>
+                  <span>k</span>
+                  <p>Man</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mid_sec d-flex align-center justify-content-center">
+              <img src="asset/images/download.png" alt="" />
+              <div class="dsc_div3">
+                <span>12/03/2024</span>
+                <p>Today</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-center justify-content-center">
+              <div class="dsc d-flex text-center">
+                <div class="dsc_div4">
+                  <div id="number_up6" class="d-in-block"></div>
+                  <span>%</span>
+                  <p>Graduate</p>
+                </div>
+                <div class="dsc_div5">
+                  <div id="number_up7" class="d-in-block"></div>
+                  <span>th</span>
+                  <p>Avarage</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box box_p box_bg borderR_5">
+          <div class="head d-flex align-center justify-between">
+            <div class="">
+              <i class="fa-solid fa-list-ul"></i>
+              <span>EVENTS</span>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-minus"></i>
+              <i class="fa-solid fa-xmark float_r"></i>
+            </div>
+          </div>
+          <div class="events d-flex align-center pd_10">
+            <span class="events_counter">25</span>
+            <div class="">
+              <span class="event3">3 Event</span>
+              <div class="d-flex">
+                <p class="pd_r">Monday</p>
+
+                <p>February 2024</p>
+              </div>
+            </div>
+          </div>
+          <ul class="time">
+            <li>
+              <p>8:00 pm</p>
+              <div class="d-flex align-center justify-between">
+                <span>Mathematic Lesson</span>
+                <div class="">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-file"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>9:30 pm</p>
+              <div class="d-flex align-center justify-between">
+                <span>Meeting With Josh</span>
+                <div class="">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-file"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p>12:15 pm</p>
+              <div class="d-flex align-center justify-between">
+                <span>Launch time</span>
+                <div class="">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-file"></i>
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="box box_p box_bg borderR_5 timetable">
+          <div class="head head1 d-flex align-center justify-between">
+            <div class="">
+              <i class="fa-regular fa-calendar"></i>
+              <span>SCHOOL TIMETABLE</span>
+            </div>
+            <div class="">
+              <i class="fa-solid fa-minus"></i>
+              <i class="fa-solid fa-xmark float_r"></i>
+            </div>
+          </div>
+
+          <div class="st_sec">
+            <span>English with William Shakespear</span>
+            <p>
+              <i class="fa-solid fa-house"></i> Room
+              <span class="bgcolor color_w font_11 pd_3 borderR_5">104 B</span>
+            </p>
+            <p>
+              <i class="fa-regular fa-clock"></i> Mon, October 21st
+              <span class="bgcolor_b color_w font_11 pd_3 borderR_5"
+                >10.00 AM - 12.00 AM</span
+              >
+            </p>
+            <img src="asset/images/1.jpg" alt="" />
+            <img src="asset/images/2.jpg" alt="" />
+            <img src="asset/images/3.jpg" alt="" />
+            <img src="asset/images/4.jpg" alt="" />
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </div>
+          <div class="st_sec">
+            <span>Mathematic with Albert Enstein</span>
+            <p>
+              <i class="fa-solid fa-house"></i> Room
+              <span class="bgcolor color_w font_11 pd_3 borderR_5">98 C</span>
+            </p>
+            <p>
+              <i class="fa-regular fa-clock"></i> Fri, November 1st
+              <span class="bgcolor_b color_w font_11 pd_3 borderR_5"
+                >09.00 AM - 10.00 AM</span
+              >
+            </p>
+            <img src="asset/images/5.jpg" alt="" />
+            <img src="asset/images/6.jpg" alt="" />
+            <img src="asset/images/7.jpg" alt="" />
+            <img src="asset/images/8.jpg" alt="" />
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- end -->
+      <footer>
+        <div class="footer">
+          <p>
+            Copyright © 2015 <span>Matirasa</span> Made with<i
+              class="fa-regular fa-heart color_g"
+            ></i>
+          </p>
+        </div>
+      </footer>
+
+      <!-- <div class="">
+      <i class="fa-solid fa-circle-up" style="color: #92cd18;"></i>
+      </div> -->
+    </main>
+
+    <!-- java script -->
+    <script src="asset/js/jquery-3.7.1.min.js"></script>
+
+    <!-- counter js -->
+    <script src="asset/js/counter.js"></script>
+
+    <!-- chart Js -->
+    <script src="asset/js/chart.js"></script>
+    <script src="asset/js/apexcharts.min.js"></script>
+    <script src="asset/js/mychart.js"></script>
+
+    <!-- full-screen -->
+    <script type="text/javascript" src="asset/js/full-screen.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".dropdown_arrow").click(function () {
+          $(".dropdown").slideToggle(500);
+        });
+
+        //accordian
+        $(".nav1").click(function () {
+          $(this).find(".sub-ul").toggleClass("move-down");
+          $(this).next().slideToggle(500);
+        });
+
+        $(".nav1").click(function () {
+          $(".sub-ul").not($(this).find(".sub-ul")).removeClass("move-down");
+          $(".sub-ul").not($(this).next()).slideUp(500);
+        });
+
+        $(".bar").click(function () {
+          $("aside").toggleClass("width100");
+          $(".aside2").toggleClass("d-none");
+          $(".aside1").toggleClass("d-block");
+          $("main, header").toggleClass("margin100");
+        });
+      });
+    </script>
+  </body>
+</html>
